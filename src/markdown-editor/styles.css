@@ -35,7 +35,7 @@ h1 {
 }
 
 .editor-container {
-  height: 100vh;
+  height: calc(100vh - 200px);
   margin: 20px auto 20px auto;
   border-radius: 2px;
   max-width: 600px;
