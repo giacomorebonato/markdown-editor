@@ -25,13 +25,7 @@ export default function OnChangeMarkdown({
     );
   }, [onChange, __UNSAFE_debounceTime]);
 
-  return (
-    <OnChangePlugin
-      onChange={OnChangeMarkdown}
-      ignoreInitialChange
-      ignoreSelectionChange
-    />
-  );
+  return <OnChangePlugin onChange={OnChangeMarkdown} ignoreSelectionChange />;
 }
 
 function transformState(

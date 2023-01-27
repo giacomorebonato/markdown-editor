@@ -5,7 +5,14 @@ function App() {
   const [text, setText] = useState("# Description");
 
   return (
-    <div>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <MarkdownEditor value={text} onChange={setText} isDisabled={false} />
     </div>
   );
